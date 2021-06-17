@@ -1,0 +1,20 @@
+#sidebar{
+    width: 15rem;
+    height: calc(100vh - 6rem);
+    box-shadow: 2px 2px 2px 2px rgb(228, 224, 224);
+}
+
+#page-content{
+    width: calc(100% - 15rem);
+    height: calc(100vh - 6rem);
+    background:rgba(203, 225, 247,0.2);;
+}
+
+.navbar{
+    height: 4.5rem;
+}
+
+.order{
+    text-align: justify;
+    margin-left: 2rem;
+}
